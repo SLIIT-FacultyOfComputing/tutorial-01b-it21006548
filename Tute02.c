@@ -17,8 +17,19 @@ Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 #include <stdio.h>
+using namespace std;
 
 int main() {
-  
+  int distance,amount;
+  cout<<"Enter distance"<<endl;
+  cin>>distance;
+
+  if(distance<=30){
+    amount=distance*50;
+    cout<<amount<<endl
+  }else if(distance>30){
+    amount=30*distance+(distance-30)*40;
+    cout<<amount<<endl;
+  }
   return 0;
 }
